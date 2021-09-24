@@ -5,8 +5,9 @@ import Layout from "../components/layout";
 import CategoriesList from "../components/categoriesList";
 import NewsSide from "../components/newsSide";
 import FeaturedMain from "../components/FeaturedMain";
+import RealEstate from "../components/realEstateSection";
 import BeautyCategory from "../components/beautySection";
-// import HealthCategory from "../components/healthCategory";
+import HealthCategory from "../components/healthCategory";
 
 const IndexPage = () => {
   const [category] = useState(true);
@@ -17,7 +18,7 @@ const IndexPage = () => {
         <Layout>
           <div className="flex justify-between container mx-auto pt-8 pb-4">
             <CategoriesList />
-            {!category ? <FeaturedMain /> : <BeautyCategory/>}
+            {!category ? <FeaturedMain /> : <HealthCategory/>}
             <NewsSide />
           </div>
         </Layout>

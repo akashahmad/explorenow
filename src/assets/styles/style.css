@@ -18,6 +18,10 @@ body {
 .font-chivo {
   font-family: "Chivo", sans-serif !important;
 }
+/* Font Size */
+.extra-small{
+  font-size: 12px;
+}
 
 /* Colors */
 .gray {

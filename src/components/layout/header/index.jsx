@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Header = () => {
   return (
     <div className="flex justify-between items-center container mx-auto w-full pt-6">
-      <div className="w-2/5">
+      <div className="w-2/5 cursor-pointer">
         <StaticImage src="../../../assets/images/icon.png" alt="nav-icon" />
       </div>
       <div className="w-1/4">

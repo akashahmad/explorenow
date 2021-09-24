@@ -2,7 +2,7 @@ import React from "react";
 import FeaturedCarousal from "./carousal";
 import FeatureWithLead from "./FeaturdWithLead";
 import SecondFeatured from "./secondFeatured";
-const HealthCategory = () => {
+const RealEstate = () => {
   return (
     <>
       <div className="w-8/12">
@@ -18,4 +18,4 @@ const HealthCategory = () => {
   );
 };
 
-export default HealthCategory;
+export default RealEstate;

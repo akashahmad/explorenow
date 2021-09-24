@@ -9,7 +9,7 @@ const FeaturedCarousal = () => {
 
   return (
     <>
-      <div className=" w-full">
+      <div className=" w-full ">
         <div>
           <H HeadingMainBlue>FASHION</H>
         </div>
@@ -34,9 +34,9 @@ const FeaturedCarousal = () => {
             showIndicators={false}
             showArrows={false}
           >
-            <div className=" flex justify-between">
-              <div className="text-left w-8/12">
-                <div className=" py-2 ">
+            <div className=" flex justify-between ">
+              <div className="text-left w-8/12 ">
+                <div className=" py-4 ">
                   <H HeadingMainBlack>Paris Fashion Show Design</H>
                 </div>
                 <StaticImage
@@ -58,10 +58,10 @@ const FeaturedCarousal = () => {
                   src="../../../assets/images/beautyTwo.jpg"
                   alt="Women-with-bag"
                 />
-                <div className=" py-2 ">
+                <div className=" py-4 ">
                   <H >Paris Fashion Show Design</H>
                 </div>
-                <div className="pt-3">
+                <div className="pt-1">
                   <P small>
                     Nam ac elit a ante commodo tristique. lacus urna,
                     condimentum a vehicula a, hendrerit ac nisi Lorem ipsum
@@ -73,14 +73,14 @@ const FeaturedCarousal = () => {
             </div>
             <div className=" flex justify-between">
               <div className="text-left w-8/12">
-                <div className=" py-2 ">
+                <div className=" py-4 ">
                   <H HeadingMainBlack>Paris Fashion Show Design</H>
                 </div>
                 <StaticImage
                   src="../../../assets/images/beautyTwo.jpg"
                   alt="Women-with-bag"
                 />
-                <div className="pt-3">
+                <div className="pt-1">
                   <P small>
                     Nam ac elit a ante commodo tristique. lacus urna,
                     condimentum a vehicula a, hendrerit ac nisi Lorem ipsum
@@ -91,16 +91,16 @@ const FeaturedCarousal = () => {
               </div>
 
               <div className="text-left w-3/12">
-                <div className=" h-52 ">
+                <div>
                 <StaticImage
                   src="../../../assets/images/featureImageWomen.png"
                   alt="Women-with-bag"
                 />
                 </div>
-                <div className=" py-2 ">
+                <div className=" py-4 ">
                   <H >Paris Fashion Show Design</H>
                 </div>
-                <div className="pt-3">
+                <div className="pt-1">
                   <P small>
                     Nam ac elit a ante commodo tristique. lacus urna,
                     condimentum a vehicula a, hendrerit ac nisi Lorem ipsum

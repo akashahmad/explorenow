@@ -14,7 +14,7 @@ const FeaturedCarousal = () => {
         className=" overflow-hidden"
       >
         <div className="mb-6">
-          <H HeadingMainBlue>HEALTH</H>
+          <H HeadingMainBlue>REAL ESTATE</H>
         </div>
         <Carousel
           axis={"horizontal"}
@@ -26,14 +26,14 @@ const FeaturedCarousal = () => {
           stopOnHover={true}
           width={"100%"}
           interval={4000}
-          swipeable={true}
+          swipeable={false}
           showIndicators={false}
           showArrows={false}
         >
           <div className=" text-left flex ">
             <div className="w-3/4">
               <StaticImage
-                src="../../../assets/images/healthMain.png"
+                src="../../../assets/images/buildingImg.png"
                 alt="HealthImage"
               />
             </div>
@@ -51,7 +51,7 @@ const FeaturedCarousal = () => {
           <div className=" text-left flex ">
             <div className="w-3/4">
               <StaticImage
-                src="../../../assets/images/healthMain.png"
+                src="../../../assets/images/buildingImg.png"
                 alt="HealthImage"
               />
             </div>

@@ -6,7 +6,7 @@ const FeatureWithLead = () => {
     <>
       <div className=" flex w-1/2 mt-6 ">
         <div className="w-full">
-          <StaticImage src="../../../assets/images/featuredHealth.png" height="100%" width="100%"/>
+          <StaticImage src="../../../assets/images/buildingFeaturedSecond.png" height="100%" width="100%"/>
         </div>
         <div className="pl-5">
         <div className="py-3">
