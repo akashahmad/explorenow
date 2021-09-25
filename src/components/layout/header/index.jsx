@@ -4,11 +4,11 @@ import { StaticImage } from "gatsby-plugin-image";
 const Header = () => {
   return (
     <div className="flex justify-between items-center container mx-auto w-full pt-6">
-      <div className="w-2/5">
-        <StaticImage src="../../assets/images/icon.png" alt="nav-icon" />
+      <div className="w-2/5 cursor-pointer">
+        <StaticImage src="../../../assets/images/icon.png" alt="nav-icon" />
       </div>
       <div className="w-1/4">
-        <StaticImage src="../../assets/images/logo.png" alt="logo" />
+        <StaticImage src="../../../assets/images/logo.png" alt="logo" />
       </div>
       <div className=" relative w-1/4">
         <input
@@ -17,7 +17,7 @@ const Header = () => {
         ></input>
         <StaticImage
           className=" absolute right-4 top-3 opacity-80"
-          src="../../assets/images/arrow.png"
+          src="../../../assets/images/arrow.png"
           alt="arrow"
         />
       </div>
