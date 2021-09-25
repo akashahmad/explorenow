@@ -23,6 +23,33 @@ body {
 .gray {
   color: #868686;
 }
+.font-dark-gray{
+  color: #a2a6bb;
+}
 .light-blue {
   color: #0187aa;
+}
+
+/* allblog-pagge-styling */
+.Active{
+  border-bottom: 3px solid #0187aa;
+}
+.border-bottom{
+  border-bottom:2px solid #c1c1c1;
+  width: 374px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.inner-img img{
+  width: 24px !important;
+}
+.bg-offwhite{
+  background-color: #faf3e4;
+}
+.bg-blue{
+  background-color: #0187aa;
+}
+.fit-content{
+  height: fit-content;
 }

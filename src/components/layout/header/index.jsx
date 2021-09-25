@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center container mx-auto w-full pt-6">
       <div className="w-2/5">
-        <StaticImage src="../../assets/images/icon.png" alt="nav-icon" />
+        <StaticImage src='../../../assets/images/icon.png' alt="nav-icon" />
       </div>
       <div className="w-1/4">
-        <StaticImage src="../../assets/images/logo.png" alt="logo" />
+        <StaticImage src="../../../assets/images/logo.png" alt="logo" />
       </div>
       <div className=" relative w-1/4">
         <input
