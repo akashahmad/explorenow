@@ -1,6 +1,6 @@
 import React from "react";
 import { P } from "@atoms"
-import { StaticImage } from "gatsby-plugin-image";
+import {arrowDown} from "@images"
 const ScrollDown = () =>{
     return (
         <>
@@ -8,8 +8,8 @@ const ScrollDown = () =>{
         <div className=" absolute -right-16  transform -rotate-90 flex flex-row-reverse justify-center items-center cursor-pointer">
           <P light className="font-chivo">SCROLL DOWN</P>
           <div className="transform rotate-90 mr-3 ">
-            <StaticImage
-              src="../../assets/images/arrowDown.png"
+            <img
+              src={arrowDown}
               alt="arrowDown"
             />
           </div>

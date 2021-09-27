@@ -1,6 +1,6 @@
 import React from "react";
 import { H, P } from "@atoms";
-import { StaticImage } from "gatsby-plugin-image";
+import {healthMain} from "@images"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -27,8 +27,8 @@ const FeaturedCarousal = () => {
         >
           <div className=" text-left flex ">
             <div className="w-3/4">
-              <StaticImage
-                src="../../../assets/images/healthMain.png"
+              <img
+                src={healthMain}
                 alt="HealthImage"
               />
             </div>
@@ -45,8 +45,8 @@ const FeaturedCarousal = () => {
           </div>
           <div className=" text-left flex ">
             <div className="w-3/4">
-              <StaticImage
-                src="../../../assets/images/healthMain.png"
+              <img
+                src={healthMain}
                 alt="HealthImage"
               />
             </div>

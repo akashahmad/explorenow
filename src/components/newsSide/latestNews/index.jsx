@@ -1,7 +1,6 @@
 import React from "react";
 import { P, H } from "@atoms";
-
-import { StaticImage } from "gatsby-plugin-image";
+import {newsTwo , newsOne} from "@images";
 
 const LatestNews = () => {
   return (
@@ -9,7 +8,7 @@ const LatestNews = () => {
       <H blue>Latest News</H>
       <div className="flex">
         <div className="rounded-full mr-5">
-          <StaticImage src="../../../assets/images/newsOne.png" alt="news" />
+          <img src={newsOne} alt="news" />
         </div>
         <div>
           <P small>
@@ -20,7 +19,7 @@ const LatestNews = () => {
       </div>
       <div className="flex pt-5">
         <div className="rounded-full mr-5">
-          <StaticImage src="../../../assets/images/newsTwo.png" alt="news" />
+          <img src={newsTwo} alt="news" />
         </div>
         <div>
           <P small>
@@ -31,7 +30,7 @@ const LatestNews = () => {
       </div>
        <div className="flex pt-5">
         <div className="rounded-full mr-5">
-          <StaticImage src="../../../assets/images/newsTwo.png" alt="news" />
+          <img src={newsTwo} alt="news" />
         </div>
         <div>
           <P small>
