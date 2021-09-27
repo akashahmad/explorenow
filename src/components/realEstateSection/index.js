@@ -2,6 +2,7 @@ import React from "react";
 import FeaturedCarousal from "./carousal";
 import FeatureWithLead from "./FeaturdWithLead";
 import SecondFeatured from "./secondFeatured";
+
 const RealEstate = () => {
   return (
     <>

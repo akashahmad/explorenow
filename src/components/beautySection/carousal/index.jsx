@@ -11,12 +11,8 @@ const FeaturedCarousal = () => {
         <div>
           <H HeadingMainBlue>BEAUTY</H>
         </div>
-        <div
-          data-sal="zoom-in"
-          data-sal-delay="600"
-          data-sal-easing="ease"
-          className="h-full"
-        >
+        <div className="h-full">
+          {" "}
           <Carousel
             axis={"horizontal"}
             showStatus={false}

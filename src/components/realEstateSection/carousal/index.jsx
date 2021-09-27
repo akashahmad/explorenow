@@ -7,12 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 const FeaturedCarousal = () => {
   return (
     <>
-      <div
-        data-sal="zoom-in"
-        data-sal-delay="600"
-        data-sal-easing="ease"
-        className=" overflow-hidden"
-      >
+      <div className=" overflow-hidden">
         <div className="mb-6">
           <H HeadingMainBlue>REAL ESTATE</H>
         </div>

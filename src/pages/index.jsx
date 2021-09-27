@@ -18,7 +18,7 @@ const IndexPage = () => {
         <Layout>
           <div className="flex justify-between container mx-auto pt-8 pb-4">
             <CategoriesList />
-            {!category ? <FeaturedMain /> : <HealthCategory/>}
+            {!category ? <FeaturedMain /> : <FeaturedMain/>}
             <NewsSide />
           </div>
         </Layout>
