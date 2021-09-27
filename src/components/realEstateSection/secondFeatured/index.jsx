@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import {buildingFeature} from "@images";
 import { H, P } from "@atoms";
 
 const SecondFeatured = () => {
@@ -11,7 +11,7 @@ const SecondFeatured = () => {
         <H> Mauris elementum leo </H>
         </div>
         <div>
-        <StaticImage src="../../../assets/images/buildingFeature.png" alt="yogaGirl" />
+        <img src={buildingFeature} alt="yogaGirl" />
         </div>
         <div className="py-2">
         <P extraSmall>

@@ -1,12 +1,12 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { H, P } from "@atoms";
+import {featuredHealth} from "@images";
 const FeatureWithLead = () => {
   return (
     <>
       <div className=" flex w-1/2 mt-6 ">
         <div className="w-full">
-          <StaticImage src="../../../assets/images/featuredHealth.png" height="100%" width="100%"/>
+          <img src={featuredHealth} height="100%" width="100%"/>
         </div>
         <div className="pl-5">
         <div className="py-3">

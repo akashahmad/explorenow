@@ -1,6 +1,6 @@
 import React from "react";
 import { H, P } from "@atoms";
-import { StaticImage } from "gatsby-plugin-image";
+import {beautyTwo , featureImageWomen} from "@images";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -32,8 +32,8 @@ const FeaturedCarousal = () => {
                 <div className=" py-4 ">
                   <H HeadingMainBlack>Paris Fashion Show Design</H>
                 </div>
-                <StaticImage
-                  src="../../../assets/images/featureImageWomen.png"
+                <img
+                  src={featureImageWomen}
                   alt="Women-with-bag"
                 />
                 <div className="pt-3">
@@ -47,8 +47,8 @@ const FeaturedCarousal = () => {
               </div>
 
               <div className="text-left w-3/12">
-                <StaticImage
-                  src="../../../assets/images/beautyTwo.jpg"
+                <img
+                  src={beautyTwo}
                   alt="Women-with-bag"
                 />
                 <div className=" py-4 ">
@@ -69,8 +69,8 @@ const FeaturedCarousal = () => {
                 <div className=" py-4 ">
                   <H HeadingMainBlack>Paris Fashion Show Design</H>
                 </div>
-                <StaticImage
-                  src="../../../assets/images/beautyTwo.jpg"
+                <img
+                  src={beautyTwo}
                   alt="Women-with-bag"
                 />
                 <div className="pt-1">
@@ -85,8 +85,8 @@ const FeaturedCarousal = () => {
 
               <div className="text-left w-3/12">
                 <div>
-                  <StaticImage
-                    src="../../../assets/images/featureImageWomen.png"
+                  <img
+                    src={featureImageWomen}
                     alt="Women-with-bag"
                   />
                 </div>

@@ -1,12 +1,12 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { H, P } from "@atoms";
+import {featureImageWomen} from "@images"
 const FeatureWithLead = () => {
   return (
     <>
       <div className="w-4/12 mt-12 pl-16 ">
         <div className="" data-sal="flip-left" data-sal-delay="1000" data-sal-easing="ease">
-          <StaticImage src="../../../assets/images/featureImageWomen.png" />
+          <StaticImage src={featureImageWomen} />
         </div>
         <div className="py-4">
           <H>Paris Fashion Show Design</H>

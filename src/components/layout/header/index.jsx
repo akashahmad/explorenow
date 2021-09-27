@@ -1,6 +1,5 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import {icon, logo} from '@images'
+import {icon, logo , arrow} from '@images'
 
 
 const Header = () => {
@@ -10,16 +9,16 @@ const Header = () => {
         <img src={icon} alt="nav-icon" />
       </div>
       <div className="w-1/4">
-        <img src={logo?.default} alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className=" relative w-1/4">
         <input
           className="rounded-full border-2 shadow-sm pr-24 py-1 pl-3 outline-none w-full"
           placeholder="Search"
         ></input>
-        <StaticImage
+        <img
           className=" absolute right-4 top-3 opacity-80"
-          src="../../../assets/images/arrow.png"
+          src={arrow}
           alt="arrow"
         />
       </div>
