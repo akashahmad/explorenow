@@ -13,7 +13,7 @@ const AllBlogs = () => {
           <BlogList />
           <div className="flex">
             <Blogs />
-            <div className="w-2/12">
+            <div className="relative -mt-10 w-2/12">
               <Ads2 />
               <NewsLetter />
             </div>

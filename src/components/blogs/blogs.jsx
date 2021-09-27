@@ -26,7 +26,7 @@ const Blogs = () => {
                 <P>February 16,2020</P>
                 <P ml_3>Updated : 3 days Ago</P>
               </div>
-              <div className="flex items-center inner-img">
+              <div className="font-futura flex items-center inner-img">
                 <StaticImage src="../../assets/images/clock.png" />
                 <P ml_2>8 min read</P>
                 <StaticImage
