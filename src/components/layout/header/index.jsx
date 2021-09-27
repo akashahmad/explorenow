@@ -1,17 +1,16 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import {icon} from '@images'
+import {icon, logo} from '@images'
 
 
 const Header = () => {
-console.log("images" , icon)
   return (
     <div className="flex justify-between items-center container mx-auto w-full pt-6">
       <div className="w-2/5 cursor-pointer">
-        <StaticImage src={icon} alt="nav-icon" />
+        <img src={icon} alt="nav-icon" />
       </div>
       <div className="w-1/4">
-        <StaticImage src="../../../assets/images/logo.png" alt="logo" />
+        <img src={logo?.default} alt="logo" />
       </div>
       <div className=" relative w-1/4">
         <input
