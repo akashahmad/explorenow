@@ -5,11 +5,7 @@ const FeatureWithLead = () => {
   return (
     <>
       <div className="w-4/12 mt-12 ">
-        <div
-            data-sal="flip-left"
-            data-sal-delay="1000"
-            data-sal-easing="ease"
-        >
+        <div>
           <StaticImage src="../../../assets/images/beautyImageHere.png" />
         </div>
         <div className="py-4">

@@ -4,24 +4,17 @@ import { StaticImage } from "gatsby-plugin-image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-
 const FeaturedCarousal = () => {
-
   return (
     <>
       <div className=" w-full ">
         <div>
           <H HeadingMainBlue>FASHION</H>
         </div>
-        <div
-          data-sal="zoom-in"
-          data-sal-delay="600"
-          data-sal-easing="ease"
-          className="h-full w-full"
-        >
+        <div className="h-full w-full">
           <Carousel
             animationHandler={"fade"}
-            swipeable ={false}
+            swipeable={false}
             axis={"horizontal"}
             showStatus={false}
             autoPlay={true}
@@ -30,7 +23,7 @@ const FeaturedCarousal = () => {
             useKeyboardArrows={true}
             stopOnHover={true}
             width={"100%"}
-            interval={4000} 
+            interval={4000}
             showIndicators={false}
             showArrows={false}
           >
@@ -59,7 +52,7 @@ const FeaturedCarousal = () => {
                   alt="Women-with-bag"
                 />
                 <div className=" py-4 ">
-                  <H >Paris Fashion Show Design</H>
+                  <H>Paris Fashion Show Design</H>
                 </div>
                 <div className="pt-1">
                   <P small>
@@ -92,13 +85,13 @@ const FeaturedCarousal = () => {
 
               <div className="text-left w-3/12">
                 <div>
-                <StaticImage
-                  src="../../../assets/images/featureImageWomen.png"
-                  alt="Women-with-bag"
-                />
+                  <StaticImage
+                    src="../../../assets/images/featureImageWomen.png"
+                    alt="Women-with-bag"
+                  />
                 </div>
                 <div className=" py-4 ">
-                  <H >Paris Fashion Show Design</H>
+                  <H>Paris Fashion Show Design</H>
                 </div>
                 <div className="pt-1">
                   <P small>

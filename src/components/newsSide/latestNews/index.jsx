@@ -40,18 +40,6 @@ const LatestNews = () => {
           <P light>February 16,2020</P>
         </div>
       </div> 
-
-      <div className=" relative ">
-        <div className=" absolute -right-16  transform -rotate-90 flex flex-row-reverse justify-center items-center cursor-pointer">
-          <P light className="font-chivo">SCROLL DOWN</P>
-          <div className="transform rotate-90 mr-3 ">
-            <StaticImage
-              src="../../../assets/images/arrowDown.png"
-              alt="arrowDown"
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 };
