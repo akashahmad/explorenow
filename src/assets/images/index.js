@@ -11,9 +11,14 @@ import YogaImage from "./yogaImage.png"
 import BuildingImg from "./buildingImg.png"
 import BuildingFeature from "./buildingFeature.png"
 import BuildingFeaturedSecond from "./buildingFeaturedSecond.png"
+import Icon from './icon.png';
+import Fashon from './fashon.png'
+import BigImage from './big-image.png'
 
 
-export * from "./icons"
+
+export const logo = Logo;
+export const newsTwo = NewsTwo;
 export const buildingFeaturedSecond = BuildingFeaturedSecond;
 export const buildingFeature = BuildingFeature;
 export const buildingImg = BuildingImg;
@@ -22,8 +27,13 @@ export const featuredHealth = FeaturedHealth;
 export const healthMain= HealthMain;
 export const featureImageWomen = FeatureImageWomen;
 export const deailHeroImage = DeailHeroImage;
-export const newsTwo = NewsTwo;
 export const newsOne = NewsOne; 
 export const fashion = Fashion;
 export const beautyTwo = BeautyTwo;
-export const logo = Logo;
+export const fashon=Fashon;
+export const bigImage=BigImage;
+
+
+export * from "./icons"
+
+

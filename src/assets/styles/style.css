@@ -11,6 +11,12 @@ body {
   padding: 0;
   font-family: "Cormorant Garamond", serif;
 }
+
+/* common classes */
+.w-30{
+  width: 30%;
+}
+
 /* Font Family */
 .font-futura {
   font-family: "FuturaPTBook", serif !important;
