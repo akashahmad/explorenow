@@ -10,7 +10,7 @@ const NewsBlog = () => {
           {/* <div style={{backgroundImage: `url(${bg_fashon})`,minWidth:"260px",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}></div> */}
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
 
               {/* <StaticImage
                 className="h-full"
@@ -21,14 +21,14 @@ const NewsBlog = () => {
               <H subHeading>
               Mauris elementum leo accumsan tempor magna elementum leo
               </H>
-              <div className="flex items-center">
+              <div className="flex font-futura text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>
           </div>
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
               {/* <StaticImage
                 className="h-full"
                 src="../../assets/images/fashon.png"
@@ -40,14 +40,14 @@ const NewsBlog = () => {
                   Mauris elementum leo accumsan tempor magna elementum leo
                 </H>
               </div>
-              <div className="flex py-2 items-center">
+              <div className="flex font-futura py-2 text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>
           </div>
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
               {/* <StaticImage
                 className="h-full"
                 src="../../assets/images/fashon.png"
@@ -59,14 +59,14 @@ const NewsBlog = () => {
                   Mauris elementum leo accumsan tempor magna elementum leo
                 </H>
               </div>
-              <div className="flex py-2 items-center">
+              <div className="flex font-futura py-2 text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>
           </div>
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
               {/* <StaticImage
                 className="h-full"
                 src="../../assets/images/fashon.png"
@@ -78,14 +78,14 @@ const NewsBlog = () => {
                   Mauris elementum leo accumsan tempor magna elementum leo
                 </H>
               </div>
-              <div className="flex py-2 items-center">
+              <div className="flex font-futura py-2 text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>
           </div>
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
               {/* <StaticImage
                 className="h-full"
                 src="../../assets/images/fashon.png"
@@ -97,14 +97,14 @@ const NewsBlog = () => {
                   Mauris elementum leo accumsan tempor magna elementum leo
                 </H>
               </div>
-              <div className="flex py-2 items-center">
+              <div className="flex font-futura py-2 text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>
           </div>
           <div className="w-30 mr-5 fit-content">
             <div>
-          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"180px",backgroundRepeat:"no-repeat"}}></div>
+          <div style={{backgroundImage: `url(${bigImage})`,minWidth:"200px",minHeight:"170px",backgroundRepeat:"no-repeat"}}></div>
               {/* <StaticImage
                 className="h-full"
                 src="../../assets/images/fashon.png"
@@ -116,7 +116,7 @@ const NewsBlog = () => {
                   Mauris elementum leo accumsan tempor magna elementum leo
                 </H>
               </div>
-              <div className="flex py-2 items-center">
+              <div className="flex font-futura py-2 text-xs items-center">
                 <P>February 16,2020</P>
               </div>
             </div>

@@ -54,9 +54,6 @@ body {
   z-index: -1;
 }
 
-.inner-img img{
-  width: 24px !important;
-}
 .bg-offwhite{
   background-color: #faf3e4;
 }
