@@ -1,5 +1,5 @@
 import React from "react";
-import { H, P } from "@atoms";
+import { H, P, Img } from "@atoms";
 import {buildingImg} from "@images";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -27,7 +27,7 @@ const FeaturedCarousal = () => {
         >
           <div className=" text-left flex ">
             <div className="w-3/4">
-              <img
+              <Img
                 src={buildingImg}
                 alt="HealthImage"
               />
@@ -45,7 +45,7 @@ const FeaturedCarousal = () => {
           </div>
           <div className=" text-left flex ">
             <div className="w-3/4">
-              <img
+              <Img
                 src={buildingImg}
                 alt="HealthImage"
               />

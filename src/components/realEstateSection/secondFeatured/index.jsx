@@ -1,6 +1,6 @@
 import React from "react";
 import {buildingFeature} from "@images";
-import { H, P } from "@atoms";
+import { H, P, Img } from "@atoms";
 
 const SecondFeatured = () => {
   return (
@@ -11,7 +11,7 @@ const SecondFeatured = () => {
         <H> Mauris elementum leo </H>
         </div>
         <div>
-        <img src={buildingFeature} alt="yogaGirl" />
+        <Img src={buildingFeature} alt="yogaGirl" />
         </div>
         <div className="py-2">
         <P extraSmall>

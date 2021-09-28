@@ -1,12 +1,11 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { H, P } from "@atoms";
+import { H, P , Img } from "@atoms";
 const FeatureWithLead = () => {
   return (
     <>
       <div className="w-4/12 mt-12 ">
         <div>
-          <StaticImage src="../../../assets/images/beautyImageHere.png" />
+          <Img src="../../../assets/images/beautyImageHere.png" />
         </div>
         <div className="py-4">
           <H>Mauris elementum leo accumsan tempor magna</H>

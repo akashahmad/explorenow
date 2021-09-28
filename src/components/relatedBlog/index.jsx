@@ -1,5 +1,5 @@
 import React from "react";
-import { P, H } from "@atoms";
+import { P, H, Img } from "@atoms";
 import {newsTwo , newsOne} from "@images";
 
 const RelatedBlog = () => {
@@ -8,7 +8,7 @@ const RelatedBlog = () => {
       <H blue>Related Blogs</H>
       <div className="flex">
         <div className="rounded-full mr-5">
-          <img src={newsOne} alt="news" />
+          <Img src={newsOne} alt="news" />
         </div>
         <div>
           <P small>
@@ -19,7 +19,7 @@ const RelatedBlog = () => {
       </div>
       <div className="flex pt-5">
         <div className="rounded-full mr-5">
-          <img src={newsTwo} alt="news" />
+          <Img src={newsTwo} alt="news" />
         </div>
         <div>
           <P small>
@@ -30,7 +30,7 @@ const RelatedBlog = () => {
       </div>
        <div className="flex pt-5">
         <div className="rounded-full mr-5">
-          <img src={newsTwo} alt="news" />
+          <Img src={newsTwo} alt="news" />
         </div>
         <div>
           <P small>
