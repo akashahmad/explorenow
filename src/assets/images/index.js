@@ -11,12 +11,12 @@ import YogaImage from "./yogaImage.png"
 import BuildingImg from "./buildingImg.png"
 import BuildingFeature from "./buildingFeature.png"
 import BuildingFeaturedSecond from "./buildingFeaturedSecond.png"
-import Icon from './icon.png';
 import Fashon from './fashon.png'
 import BigImage from './big-image.png'
+import NewsDetail from "./newsDetail.png"
 
 
-
+export const newsDetail = NewsDetail;
 export const logo = Logo;
 export const newsTwo = NewsTwo;
 export const buildingFeaturedSecond = BuildingFeaturedSecond;

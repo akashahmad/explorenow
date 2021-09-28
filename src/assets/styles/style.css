@@ -39,6 +39,9 @@ body {
 .light-blue {
   color: #0187aa;
 }
+.bg-light-blue{
+  background-color: #0187aa;
+}
 
 /* allblog-pagge-styling */
 .Active{
