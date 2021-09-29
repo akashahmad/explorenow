@@ -8,13 +8,14 @@ import FeaturedMain from "../components/FeaturedMain";
 import RealEstate from "../components/realEstateSection";
 import BeautyCategory from "../components/beautySection";
 import HealthCategory from "../components/healthCategory";
+import NavView from "../components/navView";
 
 const IndexPage = () => {
   const [category] = useState(true);
 
   return (
     <>
-      <div className=" h-screen overflow-hidden ">
+     { category ? <div className=" h-screen overflow-hidden ">
         <Layout>
           <div className="flex justify-between container mx-auto pt-8 pb-4">
             <CategoriesList />
@@ -22,7 +23,9 @@ const IndexPage = () => {
             <NewsSide />
           </div>
         </Layout>
-      </div>
+      </div> :
+      <NavView/>
+       }
     </>
   );
 };

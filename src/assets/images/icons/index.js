@@ -10,7 +10,9 @@ import Twitter from "./twitter.png";
 import Instagram from "./instagram.png";
 import WhatsApp from "./whatsapp.png";
 import Linkedin from "./linkedin.png";
+import CrossIcon from "./cross.png"
 
+export const crossIcon = CrossIcon;
 export const linkedin = Linkedin;
 export const whatsApp = WhatsApp;
 export const instagram = Instagram;

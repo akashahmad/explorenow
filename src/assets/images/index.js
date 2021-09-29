@@ -16,7 +16,9 @@ import BigImage from './big-image.png'
 import NewsDetail from "./newsDetail.png"
 import BeautyMain from "./beautyMain.png"
 import BeautyImage from "./beautyImageHere.png";
+import TrendingBlogNav from "./trendingBlogNav.png";
 
+export const trendingBlogNav = TrendingBlogNav;
 export const beautyImage = BeautyImage;
 export const beautyMain = BeautyMain;
 export const newsDetail = NewsDetail;
