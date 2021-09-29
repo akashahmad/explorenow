@@ -2,7 +2,7 @@ import React from "react";
 import { H, P, Img } from "@atoms";
 import {buildingImg} from "@images";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 
 const FeaturedCarousal = () => {
   return (
@@ -12,6 +12,8 @@ const FeaturedCarousal = () => {
           <H HeadingMainBlue>REAL ESTATE</H>
         </div>
         <Carousel
+          animationHandler={"fade"}
+          swipeable={false}
           axis={"horizontal"}
           showStatus={false}
           autoPlay={true}
@@ -21,7 +23,6 @@ const FeaturedCarousal = () => {
           stopOnHover={true}
           width={"100%"}
           interval={4000}
-          swipeable={false}
           showIndicators={false}
           showArrows={false}
         >

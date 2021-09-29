@@ -1,5 +1,6 @@
 import React from "react";
 import { H , Img} from "@atoms";
+import {beautyMain} from "@images"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -31,7 +32,7 @@ const FeaturedCarousal = () => {
                 <H HeadingMainBlack>Great Clothing Trending Design</H>
               </div>
               <Img
-                src="../../../assets/images/BeautyMain.png"
+                src={beautyMain}
                 alt="beautyImage"
               />
             </div>
@@ -40,16 +41,7 @@ const FeaturedCarousal = () => {
                 <H HeadingMainBlack>Great Clothing Trending Design</H>
               </div>
               <Img
-                src="../../../assets/images/BeautyMain.png"
-                alt="beautyImage"
-              />
-            </div>
-            <div className="text-left">
-              <div className=" py-2 ">
-                <H HeadingMainBlack>Great Clothing Trending Design</H>
-              </div>
-              <Img
-                src="../../../assets/images/BeautyMain.png"
+                src={beautyMain}
                 alt="beautyImage"
               />
             </div>

@@ -14,8 +14,11 @@ import BuildingFeaturedSecond from "./buildingFeaturedSecond.png"
 import Fashon from './fashon.png'
 import BigImage from './big-image.png'
 import NewsDetail from "./newsDetail.png"
+import BeautyMain from "./beautyMain.png"
+import BeautyImage from "./beautyImageHere.png";
 
-
+export const beautyImage = BeautyImage;
+export const beautyMain = BeautyMain;
 export const newsDetail = NewsDetail;
 export const logo = Logo;
 export const newsTwo = NewsTwo;

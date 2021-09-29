@@ -8,7 +8,8 @@ export const H = (props) => {
       ${props?.main_heading ? " text-xl font-bold light-blue " : ""} 
       ${props?.subHeading ? " font-bold light-blue py-2 " : ""}
       ${props?.HeadingMainBlue ? "text-3xl light-blue font-semibold " : ""}
-      ${props?.HeadingMainBlack ? "text-3xl " : ""} `}
+      ${props?.HeadingMainBlack ? "text-3xl " : ""}
+      ${props?.className} `}
     >
       {props.children}
     </h1>
