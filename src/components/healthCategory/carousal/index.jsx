@@ -2,7 +2,8 @@ import React from "react";
 import { H, P } from "@atoms";
 import {healthMain} from "@images"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
+
 
 const FeaturedCarousal = () => {
   return (
@@ -12,6 +13,8 @@ const FeaturedCarousal = () => {
           <H HeadingMainBlue>HEALTH</H>
         </div>
         <Carousel
+          animationHandler={"fade"}
+          swipeable={false}
           axis={"horizontal"}
           showStatus={false}
           autoPlay={true}

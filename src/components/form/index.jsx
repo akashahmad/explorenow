@@ -3,6 +3,7 @@ import { H, P } from "@atoms";
 const Form = () => {
   return (
     <>
+    <form>
       <div className=" w-7/12">
         {" "}
         <div className="pt-5 ">
@@ -22,8 +23,9 @@ const Form = () => {
         <P>Comment</P>
         </div>
         <textarea rows="6" className="w-full outline-none border-2"/>
-        <button className=" bg-light-blue px-12 py-1 text-white mt-3">Post Comment</button>
+        <button type="submit" className=" bg-light-blue px-12 py-1 text-white mt-3">Post Comment</button>
       </div>
+      </form>
     </>
   );
 };

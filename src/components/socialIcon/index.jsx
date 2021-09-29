@@ -1,6 +1,6 @@
 import React from "react";
 import { facebook, twitter, instagram, whatsApp, linkedin } from "@images";
-import {Img} from "@atoms"
+import {Img} from "@atoms";
 const SocialIcon = () => {
   return (
     <>

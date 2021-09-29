@@ -11,7 +11,8 @@ export const Li = (props) => {
         props?.active
           ? "Active text-xl font-bold light-blue mr-3 opacity-100 "
           : ""
-      } ${props?.nonActive ? "font-dark-gray mr-3 text-xl font-bold " : ""}`}
+      } ${props?.nonActive ? "font-dark-gray mr-3 text-xl font-bold " : ""}
+      ${props?.className}`}
     >
       {props.children}
     </li>
