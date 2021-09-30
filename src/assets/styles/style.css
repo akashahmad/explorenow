@@ -13,7 +13,7 @@ body {
 }
 
 /* common classes */
-.w-30{
+.w-30 {
   width: 30%;
 }
 
@@ -25,7 +25,7 @@ body {
   font-family: "Chivo", sans-serif !important;
 }
 /* Font Size */
-.extra-small{
+.extra-small {
   font-size: 12px;
 }
 
@@ -33,33 +33,36 @@ body {
 .gray {
   color: #868686;
 }
-.font-dark-gray{
+.font-dark-gray {
   color: #a2a6bb;
 }
 .light-blue {
   color: #0187aa;
 }
-.bg-light-blue{
+.bg-light-blue {
   background-color: #0187aa;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.44);
 }
 
 /* allblog-pagge-styling */
-.Active{
+.Active {
   border-bottom: 3px solid #0187aa;
 }
-.border-bottom{
-  border-bottom:2px solid #c1c1c1;
+.border-bottom {
+  border-bottom: 2px solid #c1c1c1;
   width: 374px;
   bottom: 0;
   z-index: -1;
 }
 
-.bg-offwhite{
+.bg-offwhite {
   background-color: #faf3e4;
 }
-.bg-blue{
+.bg-blue {
   background-color: #0187aa;
 }
-.fit-content{
+.fit-content {
   height: fit-content;
 }

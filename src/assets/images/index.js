@@ -17,7 +17,10 @@ import NewsDetail from "./newsDetail.png"
 import BeautyMain from "./beautyMain.png"
 import BeautyImage from "./beautyImageHere.png";
 import TrendingBlogNav from "./trendingBlogNav.png";
+import FashionThree from "./fashionThree.jpg";
 
+
+export const fashionThree= FashionThree; 
 export const trendingBlogNav = TrendingBlogNav;
 export const beautyImage = BeautyImage;
 export const beautyMain = BeautyMain;

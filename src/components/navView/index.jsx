@@ -8,9 +8,13 @@ const NavView = () => {
     <>
       <div className="bg-light-blue h-screen">
         <div className="container mx-auto">
-          <Img className="ml-8 pt-8 cursor-pointer" src={crossIcon} alt="cross" />
+          <Img
+            className="ml-8 pt-8 cursor-pointer h-14"
+            src={crossIcon}
+            alt="cross"
+          />
           <div className="flex justify-between mt-5 ">
-            <div className="ml-24">
+            <div className="w-2/5 flex flex-col ml-36">
               <div>
                 <ul>
                   <Li extraLarge className="text-white mb-8">
@@ -29,7 +33,7 @@ const NavView = () => {
                 <SocialIcon />
               </div>
             </div>
-            <div className="w-3/5 pt-12">
+            <div className="w-2/4 pt-12">
               <H extraLarge className="pb-8">
                 {" "}
                 Trending Blogs

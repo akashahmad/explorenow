@@ -6,17 +6,23 @@ import Arrow from "./arrow.png";
 import ArrowDown from "./arrowDown.png";
 import ArrowBlue from "./arrowBlue.png";
 import Facebook from "./facebook.png";
+import FacebookBlue from "./facebookBlue.png";
 import Twitter from "./twitter.png";
 import Instagram from "./instagram.png";
 import WhatsApp from "./whatsapp.png";
 import Linkedin from "./linkedin.png";
-import CrossIcon from "./cross.png"
+import CrossIcon from "./cross.png";
+import PaperPlane from "./paper-plane.png";
+import SmallCross from "./smallCross.png";
 
+export const smallCross = SmallCross;
+export const paperPlane = PaperPlane;
 export const crossIcon = CrossIcon;
 export const linkedin = Linkedin;
 export const whatsApp = WhatsApp;
 export const instagram = Instagram;
 export const twitter = Twitter;
+export const facebookBlue = FacebookBlue;
 export const facebook = Facebook;
 export const arrowBlue = ArrowBlue;
 export const arrowDown = ArrowDown;

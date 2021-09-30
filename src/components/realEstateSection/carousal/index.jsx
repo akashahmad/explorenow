@@ -1,13 +1,29 @@
 import React from "react";
-import { H, P, Img } from "@atoms";
-import {buildingImg} from "@images";
+import { useState } from "react";
+import { H, P } from "@atoms";
+import { CarouselData } from "../../../carouselData";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 
 const FeaturedCarousal = () => {
+  const [slide, setSlide] = useState(CarouselData[1]);
+  const [Thirdslide, setThirdSlide] = useState(CarouselData[2]);
+  const slideChange = (index) => {
+    if (index === CarouselData.length - 1) {
+      setSlide(CarouselData[0]);
+      setThirdSlide(CarouselData[1]);
+    } else if (index === CarouselData.length - 2) {
+      setSlide(CarouselData[CarouselData.length - 1]);
+      setThirdSlide(CarouselData[0]);
+    } else {
+      setSlide(CarouselData[index + 1]);
+      setThirdSlide(CarouselData[index + 2]);
+    }
+  };
+  console.log("::::::::::", Thirdslide);
   return (
     <>
-      <div className=" overflow-hidden">
+      <div className="w-8/12">
         <div className="mb-6">
           <H HeadingMainBlue>REAL ESTATE</H>
         </div>
@@ -25,43 +41,79 @@ const FeaturedCarousal = () => {
           interval={4000}
           showIndicators={false}
           showArrows={false}
+          onChange={(e) => {
+            slideChange(e);
+          }}
         >
-          <div className=" text-left flex ">
-            <div className="w-3/4">
-              <Img
-                src={buildingImg}
-                alt="HealthImage"
-              />
-            </div>
-            <div className=" py-2 pl-3 w-3/4">
-              <div className="py-3">
-                <H HeadingMainBlack>Great Clothing Trending Design</H>
+          {CarouselData?.map((single, index) => (
+            <div className="w-full">
+              <div className=" text-left flex ">
+                <div className="w-3/4">
+                  <div
+                    className="w-full"
+                    style={{
+                      backgroundImage: `url(${single?.url})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      width: "100%",
+                      minHeight: "240px",
+                    }}
+                  ></div>
+                </div>
+                <div className=" py-2 pl-3 w-3/4">
+                  <div className="py-3">
+                    <H HeadingMainBlack>{single?.heading}</H>
+                  </div>
+                  <P extraSmall>{single?.description}</P>
+                </div>
               </div>
-              <P extraSmall>
-                Nam ac elit a ante commodo tristique. lacus urna, condimentum a
-                vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, Nulla
-                fringilla purusconsectetur adipiscing elit
-              </P>
-            </div>
-          </div>
-          <div className=" text-left flex ">
-            <div className="w-3/4">
-              <Img
-                src={buildingImg}
-                alt="HealthImage"
-              />
-            </div>
-            <div className=" py-2 pl-3 w-3/4">
-              <div className="py-3">
-                <H HeadingMainBlack>Great Clothing Trending Design</H>
+              <div className=" flex justify-between">
+                <div className=" flex w-1/2 mt-6 text-left">
+                  <div
+                    className="w-1/2"
+                    style={{
+                      backgroundImage: `url(${slide?.url})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      width: "100%",
+                      minHeight: "160px",
+                    }}
+                  ></div>
+                  <div className="pl-5">
+                    <div className="py-3">
+                      <H>{slide?.heading}</H>
+                    </div>
+                    <div>
+                      <P extraSmall>{slide?.description}</P>
+                    </div>
+                  </div>
+                </div>
+                <div className=" w-1/2 relative">
+                  <div className=" w-4/6 absolute -top-32 pl-12 text-left">
+                    <div className="py-3">
+                      <H> {Thirdslide?.heading}</H>
+                    </div>
+                    <div
+                      className="w-full"
+                      style={{
+                        backgroundImage: `url(${Thirdslide?.url})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        width: "100%",
+                        minHeight: "230px",
+                      }}
+                    ></div>
+                    <div className="">
+                      <P extraSmall>{Thirdslide?.description}</P>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <P extraSmall>
-                Nam ac elit a ante commodo tristique. lacus urna, condimentum a
-                vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, Nulla
-                fringilla purusconsectetur adipiscing elit
-              </P>
             </div>
-          </div>
+          ))}
         </Carousel>
       </div>
     </>

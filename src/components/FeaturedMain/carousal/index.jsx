@@ -1,11 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import { H, P } from "@atoms";
-import { beautyTwo, featureImageWomen } from "@images";
 import { CarouselData } from "../../../carouselData";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Carousel from "react-responsive-carousel/lib/js/components/Carousel";
+import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 
 const FeaturedCarousal = () => {
+  const [slide, setSlide] = useState(CarouselData[1]);
+  const slideChange = (index) => {
+    if (index === CarouselData.length - 1) {
+      setSlide(CarouselData[0]);
+    } else {
+      setSlide(CarouselData[index + 1]);
+    }
+  };
+
   return (
     <>
       <div className=" w-full ">
@@ -28,55 +37,52 @@ const FeaturedCarousal = () => {
             showIndicators={false}
             showArrows={false}
             onChange={(e) => {
-              console.log("event", e);
+              slideChange(e);
             }}
           >
-            <div className=" flex justify-between ">
-              {CarouselData?.map((single, index) => (
+            {CarouselData?.map((single, index) => (
+              <div className=" flex justify-between ">
                 <div className="text-left w-8/12 " key={index}>
                   <div className=" py-4 ">
                     <H HeadingMainBlack>{single?.heading}</H>
                   </div>
                   <div
+                    className="w-full"
                     style={{
                       backgroundImage: `url(${single?.url})`,
                       backgroundRepeat: "no-repeat",
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       width: "100%",
-                      height: "350px",
+                      minHeight: "350px",
                     }}
                   ></div>
                   <div className="pt-3">
                     <P small>{single?.description}</P>
                   </div>
                 </div>
-              ))}
 
-              <div className="text-left w-3/12">
-                <div
-                  style={{
-                    backgroundImage: `url(${beautyTwo})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    width: "100%",
-                    height: "150px",
-                  }}
-                ></div>
-                <div className=" py-4 ">
-                  <H>Paris Fashion Show Design</H>
-                </div>
-                <div className="pt-1">
-                  <P small>
-                    Nam ac elit a ante commodo tristique. lacus urna,
-                    condimentum a vehicula a, hendrerit ac nisi Lorem ipsum
-                    dolor sit amet, Nulla fringilla purusconsectetur adipiscing
-                    elit
-                  </P>
+                <div className="text-left w-3/12">
+                  <div
+                    className="w-full"
+                    style={{
+                      backgroundImage: `url(${slide?.url})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      width: "100%",
+                      minHeight: "150px",
+                    }}
+                  ></div>
+                  <div className=" py-4 ">
+                    <H>{slide?.heading}</H>
+                  </div>
+                  <div className="pt-1">
+                    <P small>{slide?.description}</P>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </Carousel>
         </div>
       </div>
