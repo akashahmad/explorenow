@@ -9,9 +9,13 @@ const FeaturedCarousal = () => {
   const [slide, setSlide] = useState(CarouselData[1]);
   const slideChange = (index) => {
     if (index === CarouselData.length - 1) {
-      setSlide(CarouselData[0]);
+      setTimeout(() => {
+        setSlide(CarouselData[0]);
+      }, 500);
     } else {
-      setSlide(CarouselData[index + 1]);
+      setTimeout(() => {
+        setSlide(CarouselData[index + 1]);
+      }, 500);
     }
   };
   useEffect(() => {}, []);
@@ -64,25 +68,7 @@ const FeaturedCarousal = () => {
                 </div>
               ))}
             </Carousel>
-            <Carousel
-              className="carousel-second w-3/12"
-              animationHandler={"fade"}
-              stopOnHover={false}
-              swipeable={false}
-              axis={"horizontal"}
-              showStatus={false}
-              autoPlay={true}
-              infiniteLoop={true}
-              showThumbs={false}
-              useKeyboardArrows={true}
-              width={"100%"}
-              interval={7000}
-              showIndicators={false}
-              showArrows={false}
-              onChange={(e) => {
-                slideChange(e);
-              }}
-            >
+            <Carousel className="carousel-second w-3/12" animationHandler={"fade"} stopOnHover={false} swipeable={false} axis={"horizontal"} showStatus={false} autoPlay={true} infiniteLoop={true} showThumbs={false} useKeyboardArrows={true} width={"100%"} interval={7000} showIndicators={false} showArrows={false}>
               {CarouselData?.map((single, index) => (
                 <div className="text-left w-full">
                   <div
