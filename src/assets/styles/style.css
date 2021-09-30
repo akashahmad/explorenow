@@ -66,3 +66,101 @@ body {
 .fit-content {
   height: fit-content;
 }
+
+/* Animations carousel-One */
+.carousel-one .selected {
+  position: absolute;
+  animation-name: carousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes carousel {
+  0% {
+    opacity: 0.1;
+    width: 20%;
+    left: 900px;
+    top: -400px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 40%;
+    left: 450px;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 60%;
+    left: 300px;
+    top: -200px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 80%;
+    left: 150px;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Animations carousel-Two */
+.carousel-second .selected {
+  position: relative;
+  animation-name: carousel-second;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+@keyframes carousel-second {
+  0% {
+    opacity: 0.1;
+    width: 0px;
+    left: 900px;
+    top: -400px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 25px;
+    left: 450px;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 50px;
+    left: 300px;
+    top: -200px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 75px;
+    left: 150px;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+/* Animation Scroll Down */
+.arrow-right {
+  position: relative;
+  animation-name: searchArrow;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-duration: 3s;
+}
+@keyframes searchArrow {
+  0%   { left:-1000px; }
+  25%  { left:-700px;}
+  50%  { left:-300px; }
+  75%  { left:0px; }
+  100% { left:0px;}
+}

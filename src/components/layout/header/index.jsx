@@ -19,6 +19,7 @@ const Header = () => {
         ></input>
         <div className=" absolute right-4 top-3 opacity-80">
         <Img
+          className="arrow-right cursor-pointer"
           src={arrow}
           alt="arrow"
         />

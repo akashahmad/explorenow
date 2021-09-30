@@ -1,3 +1,4 @@
+
 import {
   beautyTwo,
   featureImageWomen,
@@ -10,7 +11,8 @@ import {
 } from "@images";
 
 export const CarouselData = [
-  {
+  
+  { 
     url: featureImageWomen,
     heading: "Paris Fashion Show",
     description:

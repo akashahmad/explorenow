@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { H, P } from "@atoms";
 import { CarouselData } from "../../../carouselData";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -14,7 +14,7 @@ const FeaturedCarousal = () => {
       setSlide(CarouselData[index + 1]);
     }
   };
-
+  useEffect(() => {}, []);
   return (
     <>
       <div className=" w-full ">
@@ -22,27 +22,28 @@ const FeaturedCarousal = () => {
           <H HeadingMainBlue>FASHION</H>
         </div>
         <div className="h-full w-full">
-          <Carousel
-            animationHandler={"fade"}
-            swipeable={false}
-            axis={"horizontal"}
-            showStatus={false}
-            autoPlay={true}
-            infiniteLoop={true}
-            showThumbs={false}
-            useKeyboardArrows={true}
-            stopOnHover={true}
-            width={"100%"}
-            interval={6000}
-            showIndicators={false}
-            showArrows={false}
-            onChange={(e) => {
-              slideChange(e);
-            }}
-          >
-            {CarouselData?.map((single, index) => (
-              <div className=" flex justify-between ">
-                <div className="text-left w-8/12 " key={index}>
+          <div className=" flex justify-between ">
+            <Carousel
+              className="carousel-one w-8/12"
+              animationHandler={"fade"}
+              stopOnHover={false}
+              swipeable={false}
+              axis={"horizontal"}
+              showStatus={false}
+              autoPlay={true}
+              infiniteLoop={true}
+              showThumbs={false}
+              useKeyboardArrows={true}
+              width={"100%"}
+              interval={7000}
+              showIndicators={false}
+              showArrows={false}
+              onChange={(e) => {
+                slideChange(e);
+              }}
+            >
+              {CarouselData?.map((single, index) => (
+                <div className="text-left w-full" key={index}>
                   <div className=" py-4 ">
                     <H HeadingMainBlack>{single?.heading}</H>
                   </div>
@@ -61,10 +62,31 @@ const FeaturedCarousal = () => {
                     <P small>{single?.description}</P>
                   </div>
                 </div>
-
-                <div className="text-left w-3/12">
+              ))}
+            </Carousel>
+            <Carousel
+              className="carousel-second w-3/12"
+              animationHandler={"fade"}
+              stopOnHover={false}
+              swipeable={false}
+              axis={"horizontal"}
+              showStatus={false}
+              autoPlay={true}
+              infiniteLoop={true}
+              showThumbs={false}
+              useKeyboardArrows={true}
+              width={"100%"}
+              interval={7000}
+              showIndicators={false}
+              showArrows={false}
+              onChange={(e) => {
+                slideChange(e);
+              }}
+            >
+              {CarouselData?.map((single, index) => (
+                <div className="text-left w-full">
                   <div
-                    className="w-full"
+                    className="w-full carousel-second"
                     style={{
                       backgroundImage: `url(${slide?.url})`,
                       backgroundRepeat: "no-repeat",
@@ -81,9 +103,9 @@ const FeaturedCarousal = () => {
                     <P small>{slide?.description}</P>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Carousel>
+              ))}
+            </Carousel>
+          </div>
         </div>
       </div>
     </>
