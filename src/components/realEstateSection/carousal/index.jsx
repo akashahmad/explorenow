@@ -23,7 +23,7 @@ const FeaturedCarousal = () => {
   console.log("::::::::::", Thirdslide);
   return (
     <>
-      <div className="w-8/12">
+      <div>
         <div className="mb-6">
           <H HeadingMainBlue>REAL ESTATE</H>
         </div>

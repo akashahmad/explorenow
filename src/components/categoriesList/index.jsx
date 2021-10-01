@@ -3,7 +3,7 @@ import {H, Li} from "@atoms";
 const CategoriesList = () => {
   return (
  
-    <div className="w-1/8">
+    <div className="w-1/5">
       <nav>
         <H className="pb-5">By Categories</H>
         <ul>

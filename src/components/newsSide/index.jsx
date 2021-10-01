@@ -6,7 +6,7 @@ import ScrollDown from "../scrollDown";
 const NewsSide = () => {
   return (
     <>
-    <div className="w-1/5">
+    <div className="w-1/4">
       <Ads />
       <LatestNews/>
       <ScrollDown/>

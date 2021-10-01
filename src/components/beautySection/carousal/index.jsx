@@ -15,9 +15,9 @@ const FeaturedCarousal = () => {
   };
   return (
     <>
-      <div className="w-3/5">
+      <div>
         <H HeadingMainBlue>BEAUTY</H>
-        <div className=" flex justify-between ">
+        <div className=" flex justify-between">
           <Carousel
             className=" beauty-carousel w-6/12"
             animationHandler={"fade"}
