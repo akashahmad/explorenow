@@ -22,10 +22,8 @@ const FeaturedCarousal = () => {
   return (
     <>
       <div className=" w-full ">
-        <div>
           <H HeadingMainBlue>FASHION</H>
-        </div>
-        <div className="h-full w-full">
+        <div className=" w-full">
           <div className=" flex justify-between ">
             <Carousel
               className="carousel-one w-8/12"
@@ -62,9 +60,7 @@ const FeaturedCarousal = () => {
                       minHeight: "350px",
                     }}
                   ></div>
-                  <div className="pt-3">
-                    <P small>{single?.description}</P>
-                  </div>
+                    <P  className="pt-3" small>{single?.description}</P>
                 </div>
               ))}
             </Carousel>
@@ -82,12 +78,8 @@ const FeaturedCarousal = () => {
                       minHeight: "150px",
                     }}
                   ></div>
-                  <div className=" py-4 ">
-                    <H>{slide?.heading}</H>
-                  </div>
-                  <div className="pt-1">
+                    <H className=" py-4 ">{slide?.heading}</H>
                     <P small>{slide?.description}</P>
-                  </div>
                 </div>
               ))}
             </Carousel>

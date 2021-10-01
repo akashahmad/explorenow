@@ -4,15 +4,15 @@ const CategoriesList = () => {
   return (
  
     <div className="w-1/8">
-        <div className="pb-5">
-        <H>By Categories</H>
-        </div>
+      <nav>
+        <H className="pb-5">By Categories</H>
         <ul>
           <Li>Fashion</Li>
           <Li>Beauty</Li>
           <Li>Health</Li>
           <Li>Real Estate</Li>
         </ul>
+        </nav>
       </div>
   );
 };

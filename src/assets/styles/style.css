@@ -142,3 +142,130 @@ body {
     left: 0px;
   }
 }
+
+/* Animation Beauty Category Carousel */
+.beauty-carousel .selected {
+  position: relative;
+  animation-name: beautyCarousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+.beauty-carouseltwo .selected {
+  position: relative;
+  animation-name: beautyCarousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+@keyframes beautyCarousel {
+  0% {
+    opacity: 0.1;
+    width: 20%;
+    left: 900px;
+    top: -400px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 40%;
+    left: 450px;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 60%;
+    left: 300px;
+    top: -200px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 80%;
+    left: 150px;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+
+.beauty-carousel .previous {
+  position: absolute;
+  animation-name: beautyPrevious;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes beautyPrevious {
+  0% {
+    opacity: 0.1;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    opacity: 0.3;;
+    width: 80%;
+    left: -50px;
+    top: -50px;
+  }
+  50% {
+    opacity: 0.6;
+    width: 60%;
+    left: -100px;
+    top: -100px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 40%;
+    left: -150px;
+    top: -150px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 20%;
+    left: -200px;
+    top: -200px;
+  }
+}
+
+.beauty-carouseltwo .previous {
+  position: relative;
+  animation-name: beautyPreviousTwo;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+@keyframes beautyPreviousTwo {
+  0% {
+    opacity: 0.1;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    opacity: 0.3;;
+    width: 80%;
+    left: -50px;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.6;
+    width: 60%;
+    left: -100px;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 40%;
+    left: -150px;
+    top: 150px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 20%;
+    left: -200px;
+    top: 200px;
+  }
+}

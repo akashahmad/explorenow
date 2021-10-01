@@ -1,13 +1,12 @@
 import * as React from "react";
-import {icon, logo , arrow} from '@images'
-import {Img} from "@atoms"
-
+import { icon, logo, arrow } from "@images";
+import { Img } from "@atoms";
 
 const Header = () => {
   return (
     <div className="flex justify-between items-center container mx-auto w-full pt-6">
-      <div className="w-2/5 cursor-pointer">
-        <Img src={icon} alt="nav-icon" />
+      <div className="w-2/5">
+        <Img className=" cursor-pointer" src={icon} alt="nav-icon" />
       </div>
       <div className="w-1/4">
         <Img src={logo} alt="logo" />
@@ -18,11 +17,7 @@ const Header = () => {
           placeholder="Search"
         ></input>
         <div className=" absolute right-4 top-3 opacity-80">
-        <Img
-          className="arrow-right cursor-pointer"
-          src={arrow}
-          alt="arrow"
-        />
+          <Img className="arrow-right cursor-pointer" src={arrow} alt="arrow" />
         </div>
       </div>
     </div>
