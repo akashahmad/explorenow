@@ -20,7 +20,6 @@ const FeaturedCarousal = () => {
       setThirdSlide(CarouselData[index + 2]);
     }
   };
-  console.log("::::::::::", Thirdslide);
   return (
     <>
       <div>

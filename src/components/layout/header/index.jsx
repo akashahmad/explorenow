@@ -2,9 +2,9 @@ import * as React from "react";
 import { icon, logo, arrow } from "@images";
 import { Img } from "@atoms";
 
-const Header = () => {
+const Header = ({headerRef}) => {
   return (
-    <div className="flex justify-between items-center container mx-auto w-full pt-6">
+    <div className="flex justify-between items-center container mx-auto w-full pt-6" ref={headerRef}>
       <div className="w-2/5">
         <Img className=" cursor-pointer" src={icon} alt="nav-icon" />
       </div>
