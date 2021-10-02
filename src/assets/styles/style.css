@@ -10,10 +10,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cormorant Garamond", serif;
+  scroll-behavior: smooth;
 }
 
 /* common classes */
-.w-30{
+.w-30 {
   width: 30%;
 }
 
@@ -25,7 +26,7 @@ body {
   font-family: "Chivo", sans-serif !important;
 }
 /* Font Size */
-.extra-small{
+.extra-small {
   font-size: 12px;
 }
 
@@ -33,33 +34,247 @@ body {
 .gray {
   color: #868686;
 }
-.font-dark-gray{
+.font-dark-gray {
   color: #a2a6bb;
 }
 .light-blue {
   color: #0187aa;
 }
-.bg-light-blue{
+.bg-light-blue {
   background-color: #0187aa;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.44);
 }
 
 /* allblog-pagge-styling */
-.Active{
+.Active {
   border-bottom: 3px solid #0187aa;
 }
-.border-bottom{
-  border-bottom:2px solid #c1c1c1;
+.border-bottom {
+  border-bottom: 2px solid #c1c1c1;
   width: 374px;
   bottom: 0;
   z-index: -1;
 }
 
-.bg-offwhite{
+.bg-offwhite {
   background-color: #faf3e4;
 }
-.bg-blue{
+.bg-blue {
   background-color: #0187aa;
 }
-.fit-content{
+.fit-content {
   height: fit-content;
+}
+
+/* Animations carousel-One */
+
+@keyframes carousel {
+  0% {
+    opacity: 0.1;
+    width: 20%;
+    left: 900px;
+    top: -400px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 40%;
+    left: 450px;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 60%;
+    left: 300px;
+    top: -200px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 80%;
+    left: 150px;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Animations carousel-Two */
+.carousel-second .selected {
+  position: relative;
+  animation-name: carousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+.carousel-one .selected {
+  position: absolute;
+  animation-name: carousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+/* Animation Scroll Down */
+.arrow-right {
+  position: relative;
+  animation-name: searchArrow;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-duration: 3s;
+}
+@keyframes searchArrow {
+  0% {
+    left: -1000px;
+  }
+  25% {
+    left: -700px;
+  }
+  50% {
+    left: -300px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* Animation Beauty Category Carousel */
+.beauty-carousel .selected {
+  position: relative;
+  animation-name: beautyCarousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+.beauty-carouseltwo .selected {
+  position: relative;
+  animation-name: beautyCarousel;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+@keyframes beautyCarousel {
+  0% {
+    opacity: 0.1;
+    width: 20%;
+    left: 900px;
+    top: -400px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 40%;
+    left: 450px;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.5;
+    width: 60%;
+    left: 300px;
+    top: -200px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 80%;
+    left: 150px;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.beauty-carousel .previous {
+  position: absolute;
+  animation-name: beautyPrevious;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes beautyPrevious {
+  0% {
+    opacity: 0.1;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 80%;
+    left: -50px;
+    top: -50px;
+  }
+  50% {
+    opacity: 0.6;
+    width: 60%;
+    left: -100px;
+    top: -100px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 40%;
+    left: -150px;
+    top: -150px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 20%;
+    left: -200px;
+    top: -200px;
+  }
+}
+
+.beauty-carouseltwo .previous {
+  position: relative;
+  animation-name: beautyPreviousTwo;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+@keyframes beautyPreviousTwo {
+  0% {
+    opacity: 0.1;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    opacity: 0.3;
+    width: 80%;
+    left: -50px;
+    top: 50px;
+  }
+  50% {
+    opacity: 0.6;
+    width: 60%;
+    left: -100px;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.7;
+    width: 40%;
+    left: -150px;
+    top: 150px;
+  }
+  100% {
+    opacity: 0.9;
+    width: 20%;
+    left: -200px;
+    top: 200px;
+  }
+}
+.scrollSections {
+  /* height: 100vh; */
+  height: 100vh;
+  overflow: hidden;
+}
+.section {
+  height: 100vh;
+  overflow: hidden;
+  transition: height 0.8s ease-in-out;
 }

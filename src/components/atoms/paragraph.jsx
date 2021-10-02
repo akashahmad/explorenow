@@ -9,6 +9,9 @@ export const P = (props) => {
      ${props?.small ? "text-sm " : ""} ${
         props?.extraSmall ? "extra-small " : ""
       }
+      ${
+        props?.large ? "text-xl " : ""
+      }
       ${props?.className}`}
     >
       {props.children}

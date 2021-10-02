@@ -9,6 +9,8 @@ export const H = (props) => {
       ${props?.subHeading ? " font-bold light-blue py-2 " : ""}
       ${props?.HeadingMainBlue ? "text-3xl light-blue font-semibold " : ""}
       ${props?.HeadingMainBlack ? "text-3xl " : ""}
+      ${props?.extraLarge ? "text-3xl text-white font-bold opacity-100" : ""
+    }
       ${props?.className} `}
     >
       {props.children}
