@@ -3,13 +3,13 @@ import Ads from "./ads";
 import LatestNews from "./latestNews";
 import ScrollDown from "../scrollDown";
 
-const NewsSide = () => {
+const NewsSide = (props) => {
   return (
     <>
     <div className="w-1/4">
       <Ads />
       <LatestNews/>
-      <ScrollDown/>
+      <ScrollDown scrollHandler={props?.scrollHandler} />
       </div>  
     </>
   );

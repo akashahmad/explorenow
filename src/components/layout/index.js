@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from "./header";
 import Footer from "./footer";
-const Layout = (props) =>{
+const  Layout = (props) =>{
     return(
         <>
         <Header headerRef={props?.headerRef}/>

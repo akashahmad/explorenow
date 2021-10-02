@@ -1,6 +1,5 @@
 import React, { useEffect, useReducer, useRef } from "react";
 import "../assets/styles/style.css";
-import ReactFullpage from "@fullpage/react-fullpage";
 import { useState } from "react";
 import Layout from "../components/layout";
 import CategoriesList from "../components/categoriesList";
@@ -17,12 +16,16 @@ const IndexPage = ({ location }) => {
   let scrollBodyRef = useRef(null);
   let menuRef = useRef(null);
   let currentIndex = 0;
-  var scrollingDirection = 0; //idle
+  var scrollingDirection = 0; 
   var lastScroll = 9999;
-  var scrollIdleTime = 300; // time interval that we consider a new scroll event
-  // console.log("location", location);
+  var scrollIdleTime = 300; 
 
-  let sectionIds = ["featuredCategory", "beautyCategory", "healthCategory", "realEstate"];
+  let sectionIds = [
+    "beautyCategory",
+    "healthCategory",
+    "featuredCategory",
+    "realEstate",
+  ];
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,11 +36,17 @@ const IndexPage = ({ location }) => {
       scrollBodyRef.current.addEventListener("wheel", function (event) {
         var delta = event.deltaY;
         var timeNow = performance.now();
-        if (delta > 0 && (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)) {
+        if (
+          delta > 0 &&
+          (scrollingDirection != 1 || timeNow > lastScroll + scrollIdleTime)
+        ) {
           scrollHandler("down");
 
           scrollingDirection = 1;
-        } else if (delta < 0 && (scrollingDirection != 2 || timeNow > lastScroll + scrollIdleTime)) {
+        } else if (
+          delta < 0 &&
+          (scrollingDirection != 2 || timeNow > lastScroll + scrollIdleTime)
+        ) {
           scrollHandler("up");
 
           scrollingDirection = 2;
@@ -79,23 +88,26 @@ const IndexPage = ({ location }) => {
     <>
       <div className=" ">
         <Layout headerRef={menuRef}>
-          <div className="flex justify-between container mx-auto pt-8 pb-4 scrollSections" ref={scrollBodyRef}>
+          <div
+            className="flex justify-between container mx-auto pt-8 pb-4 scrollSections"
+            ref={scrollBodyRef}
+          >
             <CategoriesList />
             <div className="w-full pr-16" id="scrollSectionHeight">
-              <div className="section" id="featuredCategory">
-                <FeaturedMain />
-              </div>
-              <div className="section" id="beautyCategory">
+            <div className="section" id="beautyCategory">
                 <BeautyCategory />
               </div>
               <div className="section" id="healthCategory">
                 <HealthCategory />
               </div>
+              <div className="section" id="featuredCategory">
+                <FeaturedMain />
+              </div>
               <div className="section" id="realEstate">
                 <RealEstate />
               </div>
             </div>
-            <NewsSide />
+            <NewsSide scrollHandler={scrollHandler}/>
           </div>
         </Layout>
       </div>
