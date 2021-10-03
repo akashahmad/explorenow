@@ -1,17 +1,33 @@
 import React from "react";
+import "../assets/styles/style.css";
 import { H, P } from "@atoms";
+import { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import { eye, clock, chat, newsDetail } from "@images";
 import AddFull from "../components/addFull";
 import Ads2 from "../components/ads2";
 import Newsletter from "../components/newsLetter";
 import SocialIcon from "../components/socialIcon";
+import NewsletterFull from "../components/newsLetterFull";
+import NavView from "../components/navView";
 const NewsDetail = () => {
+  // const [showNewsLetter, setShowNewsLetter] = useState(true);
+  // useEffect(() => {
+  //   const closeNewsLetter = () => {
+  //     setShowNewsLetter(false);
+  //   };
+  // }, []);
+
+  // setTimeout(() => {
+  //   setShowNewsLetter(true);
+  // }, 2000);
   return (
     <>
+    <NavView/>
       <Layout>
-        <div className=" container mx-auto py-16 flex justify-between">
-          <div className=" w-9/12">
+        <NewsletterFull />
+        <div className="container mx-auto pt-28 flex justify-between h-screen ">
+          <div className=" hide-scroll ain w-9/12 overflow-y-scroll ">
             <div className=" py-4 w-9/12">
               <H HeadingMainBlack>
                 {" "}

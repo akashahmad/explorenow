@@ -1,12 +1,10 @@
 import * as React from "react";
 import Header from "./header";
-import Footer from "./footer";
 const  Layout = (props) =>{
     return(
         <>
-        <Header headerRef={props?.headerRef}/>
+        <Header headerRef={props?.headerRef} setNavShow={props?.setNavShow}/>
         {props.children}
-        <Footer />
         </>
     )
 }
