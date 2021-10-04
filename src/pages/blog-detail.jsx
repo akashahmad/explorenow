@@ -1,21 +1,25 @@
 import React from "react";
+import "../assets/styles/style.css";
 import { H, P,Img } from "@atoms";
 import Layout from "../components/layout";
 import { eye, clock, chat, deailHeroImage } from "@images";
 import AddFull from "../components/addFull";
 import Comments from "../components/comments";
 import Form from "../components/form";
-import LatestNews from "../components/newsSide/latestNews";
 import RelatedBlog from "../components/relatedBlog";
 import Newsletter from "../components/newsLetter";
 import FindMore from "../components/findMore";
 import SocialIcon from "../components/socialIcon";
+import NewsletterFull from "../components/newsLetterFull";
+import NavView from "../components/navView";
 const BlogSite = () => {
   return (
     <>
+     <NavView/> 
       <Layout>
-        <div className=" container mx-auto py-12 flex justify-between">
-          <div className=" w-9/12">
+      <NewsletterFull />
+        <div className="container mx-auto pt-28 flex justify-between h-screen ">
+          <div className="hide-scroll w-9/12 overflow-y-scroll ">
             <div
               style={{
                 backgroundImage: `url(${deailHeroImage})`,
@@ -151,8 +155,6 @@ const BlogSite = () => {
             </div>
           </div>
           <div className="w-3/12 pl-12">
-            <LatestNews />
-            <FindMore />
             <RelatedBlog />
             <FindMore />
             <Newsletter />

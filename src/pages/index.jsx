@@ -8,7 +8,6 @@ import FeaturedMain from "../components/FeaturedMain";
 import RealEstate from "../components/realEstateSection";
 import BeautyCategory from "../components/beautySection";
 import HealthCategory from "../components/healthCategory";
-import NewsletterFull from "../components/newsLetterFull";
 import NavView from "../components/navView";
 
 const IndexPage = ({ location }) => {
@@ -16,9 +15,9 @@ const IndexPage = ({ location }) => {
   let scrollBodyRef = useRef(null);
   let menuRef = useRef(null);
   let currentIndex = 0;
-  var scrollingDirection = 0; 
+  var scrollingDirection = 0;
   var lastScroll = 9999;
-  var scrollIdleTime = 300; 
+  var scrollIdleTime = 300;
 
   let sectionIds = [
     "beautyCategory",
@@ -29,7 +28,7 @@ const IndexPage = ({ location }) => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      document.getElementById(sectionIds[3]).scrollTop = 0;
+      // document.getElementById(sectionIds[3]).scrollTop = 0;
       totalHeight = totalHeight - 32;
       totalHeight = totalHeight - menuRef.current.offsetHeight;
       scrollBodyRef.current.style.height = totalHeight + "px";
@@ -86,15 +85,16 @@ const IndexPage = ({ location }) => {
 
   return (
     <>
-      <div className=" ">
+     <NavView/>
         <Layout headerRef={menuRef}>
           <div
-            className="flex justify-between container mx-auto pt-8 pb-4 scrollSections"
+          id="scrollSectionHeight"
+            className="flex justify-between container mx-auto pt-4 pb-4 scrollSections pt-28 pb-16"
             ref={scrollBodyRef}
           >
             <CategoriesList />
-            <div className="w-full pr-16" id="scrollSectionHeight">
-            <div className="section" id="beautyCategory">
+            <div className="w-full pr-16" >
+              <div className="section" id="beautyCategory">
                 <BeautyCategory />
               </div>
               <div className="section" id="healthCategory">
@@ -107,10 +107,9 @@ const IndexPage = ({ location }) => {
                 <RealEstate />
               </div>
             </div>
-            <NewsSide scrollHandler={scrollHandler}/>
+            <NewsSide scrollHandler={scrollHandler} />
           </div>
         </Layout>
-      </div>
     </>
   );
 };

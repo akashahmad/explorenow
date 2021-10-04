@@ -118,32 +118,6 @@ body {
   animation-duration: 1s;
 }
 
-/* Animation Scroll Down */
-.arrow-right {
-  position: relative;
-  animation-name: searchArrow;
-  animation-timing-function: linear;
-  animation-delay: 5s;
-  animation-duration: 3s;
-}
-@keyframes searchArrow {
-  0% {
-    left: -1000px;
-  }
-  25% {
-    left: -700px;
-  }
-  50% {
-    left: -300px;
-  }
-  75% {
-    left: 0px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
 /* Animation Beauty Category Carousel */
 .beauty-carousel .selected {
   position: relative;
@@ -277,4 +251,26 @@ body {
   height: 100vh;
   overflow: hidden;
   transition: height 0.8s ease-in-out;
+}
+
+/* hide scrollBar */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+/* NavView */
+.nav-view{
+ animation-name: width;
+  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  overflow: hidden;
+
+}
+@keyframes width {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
 }

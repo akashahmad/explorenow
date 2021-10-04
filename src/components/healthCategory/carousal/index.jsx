@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "gatsby";
 import { useState } from "react";
 import { H, P } from "@atoms";
 import { CarouselData } from "../../../carouselData";
@@ -22,6 +23,7 @@ const FeaturedCarousal = () => {
   };
   return (
     <>
+      <Link to="/blog-detail/">
       <div>
         <div className="mb-6">
           <H HeadingMainBlue>HEALTH</H>
@@ -37,7 +39,7 @@ const FeaturedCarousal = () => {
           useKeyboardArrows={true}
           stopOnHover={true}
           width={"100%"}
-          interval={3000}
+          interval={6000}
           showIndicators={false}
           showArrows={false}
           onChange={(e) => {
@@ -115,6 +117,7 @@ const FeaturedCarousal = () => {
           ))}
         </Carousel>
       </div>
+      </Link>
     </>
   );
 };
